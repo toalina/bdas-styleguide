@@ -1,5 +1,5 @@
 # BDAS Styleguide
-Styleguide for BDAS user interfaces and application. Utilizing Angular 7.0 and Angular Material Design components with custom branding theme and colors.
+Styleguide for BDAS user interfaces and application. Utilizing Angular 7.0 and Angular Material Design components with custom branding theme and colors. Style adopted from [https://www.edprnorthamerica.com/](https://www.edprnorthamerica.com/) website.
 
 ## Live styleguide: 
 [http://hanging-sun.surge.sh/](http://hanging-sun.surge.sh/)

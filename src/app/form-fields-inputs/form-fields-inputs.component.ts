@@ -7,11 +7,12 @@ import {FormControl, Validators} from '@angular/forms';
   styleUrls: ['./form-fields-inputs.component.scss']
 })
 export class FormFieldsInputsComponent implements OnInit {
+  // Checkbox
+  disableSelect = new FormControl(false);
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  // Radios with ngModel
+  favoriteSeason: string;
+  seasons: string[] = ['Winter', 'Spring', 'Summer', 'Autumn'];
 
   // Form field with Error Message
   email = new FormControl('', [Validators.required, Validators.email]);
@@ -21,12 +22,8 @@ export class FormFieldsInputsComponent implements OnInit {
         this.email.hasError('email') ? 'Not a valid email' :
             '';
   }
+  constructor() { }
 
-  // Checkbox
-  disableSelect = new FormControl(false);
-
-  // Radios with ngModel
-  favoriteSeason: string;
-  seasons: string[] = ['Winter', 'Spring', 'Summer', 'Autumn'];
-
+  ngOnInit() {
+  }
 }
