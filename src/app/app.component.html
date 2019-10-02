@@ -1,100 +1,141 @@
 <h1>{{ title }}</h1>
-
-<h3 class='heading-title'>EDPR Logo</h3>
-<a class="logo" href="https://www.edprnorthamerica.com">
-  <img class="logo-img" src="https://www.edprnorthamerica.com/wp-content/uploads/2014/02/edpr-logo.png" style="width: 180.882px; display: inline-block; height: 75px; background: black;" alt="EDP Renewables">
-</a>
-
-<mat-divider></mat-divider>
-
-<h3 class='heading-title'>Fonts</h3>
-
-<h1 class='intro-title'>Home hero h1: 70px</h1>
-<h3 class='heading-title'>Heading title h3: 24px</h3>
-<h3 color="primary" class='callout-title'>Call out h3: 16px in primary color</h3>
-
-<h1>This is an h1: 47px</h1>
-<h2>This is an h2: 24px</h2>
-<h3>This is an h3: 18px</h3>
-<h4>This is an h4: 16px</h4>
-<h5>This is an h5: 14px</h5>
-<h6>This is an h6: 12px</h6>
-
-<mat-divider></mat-divider>
-
-<h3 class='heading-title'>Paragraphs</h3>
-<p>This is a paragraph: 16px</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p class='entry-content'>This is a small paragraph: 13px</p>
-<p class='entry-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<mat-divider></mat-divider>
-
-<h3 class='heading-title'>Basic Buttons</h3>
-<div class="button-row">
-  <button mat-button>Basic</button>
-  <button mat-button color="primary">Primary</button>
-  <button mat-button color="accent">Accent</button>
-  <button mat-button color="warn">Warn</button>
-  <button mat-button disabled>Disabled</button>
-  <a mat-button routerLink=".">Link</a>
-</div>
-
-<h3 class='heading-title'>Stroked Buttons</h3>
-<div class="button-row">
-  <button mat-stroked-button>Basic</button>
-  <button mat-stroked-button color="primary">Primary</button>
-  <button mat-stroked-button color="accent">Accent</button>
-  <button mat-stroked-button color="warn">Warn</button>
-  <button mat-stroked-button disabled>Disabled</button>
-  <a mat-stroked-button routerLink=".">Link</a>
-</div>
-
-<h3 class='heading-title'>Flat Buttons</h3>
-<div class="button-row flat-button-row">
-  <button mat-flat-button>Basic</button>
-  <button mat-flat-button color="primary">Primary</button>
-  <button mat-flat-button color="accent">Accent</button>
-  <button mat-flat-button color="warn">Warn</button>
-  <button mat-flat-button disabled>Disabled</button>
-  <a mat-flat-button routerLink=".">Link</a>
-</div>
-
-<mat-divider></mat-divider>
-
-<h3 class='heading-title'>Basic Inputs</h3>
-<form class="form">
-  <mat-form-field class="full-width">
-    <input matInput placeholder="Favorite food" value="Sushi">
-  </mat-form-field>
-
-  <mat-form-field class="full-width">
-    <textarea matInput placeholder="Leave a comment"></textarea>
-  </mat-form-field>
-
-  <mat-form-field>
-    <mat-label>Font size</mat-label>
-    <mat-select #fontSize value="16px">
-      <mat-option value="10px">10px</mat-option>
-      <mat-option value="12px">12px</mat-option>
-      <mat-option value="14px">14px</mat-option>
-      <mat-option value="16px">16px</mat-option>
-      <mat-option value="18px">18px</mat-option>
-      <mat-option value="20px">20px</mat-option>
-    </mat-select>
-  </mat-form-field>
-
-  <mat-form-field appearance="outline">
-    <mat-label>Outline form field</mat-label>
-    <input matInput placeholder="Placeholder">
-    <mat-hint>Hint</mat-hint>
-  </mat-form-field>
+<div>
+  <div class='logo-container'>
+    <h3 class='heading-title'>EDPR Logo</h3>
+    <img class="logo-img" src="assets/edpr-logo.png" style="width: 180.882px; display: inline-block; height: 75px; background: black;" alt="EDP Renewables">
+    <img class="logo-img" src="assets/EDP+logo.png" style="width: 86px; display: inline-block;" alt="EDP Renewables">
+    <img class="logo-img" src="assets/edpr-renovaveis-blk.png" style="width: 160px; display: inline-block;" alt="EDPR Renováveis">
+  </div>
   
-</form>
-
-<p>
   
-</p>
+  <mat-divider></mat-divider>
+  
+  <h3 class='heading-title'>Font Families</h3>
+
+  <h3>Primary font: Oswald</h3>
+  <p>Secondary font: Open Sans</p>
+
+  <mat-divider></mat-divider>
+  
+  <h3 class='heading-title'>Font Sizes</h3>
+
+  <h1 class='intro-title'>Home hero h1: 70px</h1>
+  <h3 class='heading-title'>Heading title h3: 24px</h3>
+  <h3 color="primary" class='callout-title'>Call out h3: 16px in primary color</h3>
+
+  <h1>This is an h1: 47px</h1>
+  <h2>This is an h2: 24px</h2>
+  <h3>This is an h3: 18px</h3>
+  <h4>This is an h4: 16px</h4>
+  <h5>This is an h5: 14px</h5>
+  <h6>This is an h6: 12px</h6>
+  
+  <mat-divider></mat-divider>
+  
+  <h3 class='heading-title'>Paragraphs</h3>
+  <p>This is a paragraph: 16px italics</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  
+  <p class='entry-content'>This is a small paragraph: 13px</p>
+  <p class='entry-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  
+  <mat-divider></mat-divider>
+  
+  <h3 class='heading-title'>Basic Buttons</h3>
+  <div class="button-row">
+    <button mat-button>Basic</button>
+    <button mat-button color="primary">Primary</button>
+    <button mat-button color="accent">Accent</button>
+    <button mat-button color="warn">Warn</button>
+    <button mat-button disabled>Disabled</button>
+    <a mat-button routerLink=".">Link</a>
+  </div>
+  
+  <h3 class='heading-title'>Stroked Buttons</h3>
+  <div class="button-row">
+    <button mat-stroked-button>Basic</button>
+    <button mat-stroked-button color="primary">Primary</button>
+    <button mat-stroked-button color="accent">Accent</button>
+    <button mat-stroked-button color="warn">Warn</button>
+    <button mat-stroked-button disabled>Disabled</button>
+    <a mat-stroked-button routerLink=".">Link</a>
+  </div>
+  
+  <h3 class='heading-title'>Flat Buttons</h3>
+  <div class="button-row flat-button-row">
+    <button mat-flat-button>Basic</button>
+    <button mat-flat-button color="primary">Primary</button>
+    <button mat-flat-button color="accent">Accent</button>
+    <button mat-flat-button color="warn">Warn</button>
+    <button mat-flat-button disabled>Disabled</button>
+    <a mat-flat-button routerLink=".">Link</a>
+  </div>
+  
+  <mat-divider></mat-divider>
+
+  <!-- Input with error message
+  Input grouped with 2 inputs
+  Option drop down
+  Text area
+  Check box
+  Submit -->
+  
+  <h3 class='heading-title'>Form Fields and Inputs</h3>
+
+  <form class="form-container">
+
+    <mat-form-field appearance="outline">
+      <mat-label>Basic Input</mat-label>
+      <input matInput placeholder="Placeholder text" value="">
+    </mat-form-field>
+  
+    <mat-form-field appearance="outline">
+      <mat-label>Textarea Input</mat-label>
+      <textarea matInput placeholder="Leave a comment"></textarea>
+    </mat-form-field>
+  
+    <mat-form-field appearance="outline">
+      <mat-label>Select Options</mat-label>
+      <mat-select value="16px" placeholder="Select">
+        <mat-option value="Choice A">Choice A</mat-option>
+        <mat-option value="Choice B">Choice B</mat-option>
+        <mat-option value="Choice C">Choice C</mat-option>
+        <mat-option value="Choice D">Choice D</mat-option>
+        <mat-option value="Choice E">Choice E</mat-option>
+        <mat-option value="Choice F">Choice F</mat-option>
+      </mat-select>
+    </mat-form-field>
+    
+    <mat-form-field appearance="outline">
+      <mat-label>Form field with error message</mat-label>
+      <input matInput placeholder="Enter your email" [formControl]="email" required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+
+    <mat-checkbox [formControl]="disableSelect">Disable select</mat-checkbox>
+
+    <div>
+      <h3>Radios with ngModel</h3>
+      <label id="radio-group-label">Pick your favorite season</label>
+      <mat-radio-group
+        aria-labelledby="radio-group-label"
+        class="radio-group"
+        [(ngModel)]="favoriteSeason">
+        <mat-radio-button class="radio-button" *ngFor="let season of seasons" [value]="season">
+          {{season}}
+        </mat-radio-button>
+      </mat-radio-group>
+      <div>Your favorite season is: {{favoriteSeason}}</div>
+    </div>
+    
+  </form>
+
+
+  
+
+  
+  
+</div>
+
 
 
