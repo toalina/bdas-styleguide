@@ -1,21 +1,100 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<h1>{{ title }}</h1>
 
-<router-outlet></router-outlet>
+<h3 class='heading-title'>EDPR Logo</h3>
+<a class="logo" href="https://www.edprnorthamerica.com">
+  <img class="logo-img" src="https://www.edprnorthamerica.com/wp-content/uploads/2014/02/edpr-logo.png" style="width: 180.882px; display: inline-block; height: 75px; background: black;" alt="EDP Renewables">
+</a>
+
+<mat-divider></mat-divider>
+
+<h3 class='heading-title'>Fonts</h3>
+
+<h1 class='intro-title'>Home hero h1: 70px</h1>
+<h3 class='heading-title'>Heading title h3: 24px</h3>
+<h3 color="primary" class='callout-title'>Call out h3: 16px in primary color</h3>
+
+<h1>This is an h1: 47px</h1>
+<h2>This is an h2: 24px</h2>
+<h3>This is an h3: 18px</h3>
+<h4>This is an h4: 16px</h4>
+<h5>This is an h5: 14px</h5>
+<h6>This is an h6: 12px</h6>
+
+<mat-divider></mat-divider>
+
+<h3 class='heading-title'>Paragraphs</h3>
+<p>This is a paragraph: 16px</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p class='entry-content'>This is a small paragraph: 13px</p>
+<p class='entry-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<mat-divider></mat-divider>
+
+<h3 class='heading-title'>Basic Buttons</h3>
+<div class="button-row">
+  <button mat-button>Basic</button>
+  <button mat-button color="primary">Primary</button>
+  <button mat-button color="accent">Accent</button>
+  <button mat-button color="warn">Warn</button>
+  <button mat-button disabled>Disabled</button>
+  <a mat-button routerLink=".">Link</a>
+</div>
+
+<h3 class='heading-title'>Stroked Buttons</h3>
+<div class="button-row">
+  <button mat-stroked-button>Basic</button>
+  <button mat-stroked-button color="primary">Primary</button>
+  <button mat-stroked-button color="accent">Accent</button>
+  <button mat-stroked-button color="warn">Warn</button>
+  <button mat-stroked-button disabled>Disabled</button>
+  <a mat-stroked-button routerLink=".">Link</a>
+</div>
+
+<h3 class='heading-title'>Flat Buttons</h3>
+<div class="button-row flat-button-row">
+  <button mat-flat-button>Basic</button>
+  <button mat-flat-button color="primary">Primary</button>
+  <button mat-flat-button color="accent">Accent</button>
+  <button mat-flat-button color="warn">Warn</button>
+  <button mat-flat-button disabled>Disabled</button>
+  <a mat-flat-button routerLink=".">Link</a>
+</div>
+
+<mat-divider></mat-divider>
+
+<h3 class='heading-title'>Basic Inputs</h3>
+<form class="form">
+  <mat-form-field class="full-width">
+    <input matInput placeholder="Favorite food" value="Sushi">
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <textarea matInput placeholder="Leave a comment"></textarea>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Font size</mat-label>
+    <mat-select #fontSize value="16px">
+      <mat-option value="10px">10px</mat-option>
+      <mat-option value="12px">12px</mat-option>
+      <mat-option value="14px">14px</mat-option>
+      <mat-option value="16px">16px</mat-option>
+      <mat-option value="18px">18px</mat-option>
+      <mat-option value="20px">20px</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Outline form field</mat-label>
+    <input matInput placeholder="Placeholder">
+    <mat-hint>Hint</mat-hint>
+  </mat-form-field>
+  
+</form>
+
+<p>
+  
+</p>
+
+

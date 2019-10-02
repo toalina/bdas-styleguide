@@ -1,0 +1,266 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap');
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+
+// Define real custom palette (using http://mcg.mbitson.com)
+$edpr-brand: (
+    50: #fae3e4,
+    100: #f2b9bc,
+    200: #e98a8f,
+    300: #e05b62,
+    400: #d93840,
+    500: #d2151e,
+    600: #cd121a,
+    700: #c70f16,
+    800: #c10c12,
+    900: #b6060a,
+    1000: #980b12,
+    A100: #ffe0e0,
+    A200: #ffadae,
+    A400: #ff7a7b,
+    A700: #ff6062,
+    contrast: (
+        50: $black-87-opacity,
+        100: $black-87-opacity,
+        200: $black-87-opacity,
+        300: $black-87-opacity,
+        400: $black-87-opacity,
+        500: white,
+        600: white,
+        700: white,
+        800: white,
+        900: white,
+        A100: $black-87-opacity,
+        A200: $black-87-opacity,
+        A400: $black-87-opacity,
+        A700: white,
+    )
+);
+
+$bdas-styleguide-primary: mat-palette($edpr-brand, 500, 300, 800);
+$bdas-styleguide-accent: mat-palette($edpr-brand, 1000);
+
+// The warn palette is optional (defaults to red).
+$bdas-styleguide-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$bdas-styleguide-theme: mat-light-theme($bdas-styleguide-primary, $bdas-styleguide-accent, $bdas-styleguide-warn);
+
+@include angular-material-theme($bdas-styleguide-theme);
+
+body {
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    font-size: 13px; 
+    font-weight: 400; 
+    color: #676767;
+    background: #fff;
+    margin: 1em;
+}
+h1, h2, h3, h4, h5, h6 { 
+    font-family: 'Oswald', 'Arial', 'Helvetica', sans-serif !important; 
+    
+}
+h1{ font-size: 47px; color: #000000; }
+h2{ font-size: 24px; color: #000000; letter-spacing: 1px; }
+h3{ font-size: 18px; color: #000000; letter-spacing: 0.5px; }
+h4{ font-size: 16px; color: #000000; }
+h5{ font-size: 14px; color: #000000; }
+h6{ font-size: 12px; color: #000000; }
+
+.intro-title { font-size: 70px !important; line-height: 78px;}
+.heading-title { font-size: 24px; letter-spacing: 1px; font-weight: 400;}
+.callout-title {
+    font-weight: 400;
+    letter-spacing: .5px;
+    font-size: 20px;
+    line-height: 28px;
+    color: mat-color($bdas-styleguide-primary)
+}
+
+// PARAGRAPHS
+p { 
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.7em;
+}
+
+.entry-content {
+    font-size: 13px;
+    font-style: normal;
+}
+
+
+// BUTTON STYLES
+.mat-button {
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+}
+.button-row button, .flat-button-row button,
+.button-row a, .flat-button-row a {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+// INPUT STYLES
+.form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  margin: 8px 0;
+}
+
+input {
+    font-style: normal;
+}
+
+.full-width {
+  width: 100%;
+}
+
+
+
+/* Header ------------------------------------------------------------------------ */  
+#header, .header-clone, .theme-boxed #header { background-color: #b5b5b5; }
+#header.header-small { background-color: rgba(181,181,181,.98);}
+
+
+        
+    //     #sidebar a{
+    //         font-family: Open Sans, Arial, Helvetica, sans-serif;
+    //     }
+    //     h1,h2,h3,h4,h5,h6,
+    //     input[type="password"],
+    //     input[type="submit"],
+    //     input[type="reset"],
+    //     input[type="button"]
+    //     button,
+    //     article .more-link,
+    //     .tw_post_sharebox span,
+    //     .btn,
+    //     .accordion-heading .accordion-toggle,
+    //     .waves-heading .heading-title,
+    //     .tw-breadcrumb,
+    //     .pricing-top>span:first-child,
+    //     .process-title,
+    //     .process-number,
+    //     .nav-tabs>li span,
+    //     .portfolio-overlay .portfolio-meta,
+    //     .portfolio-filter li a,
+    //     .waves-pagination ul.page-numbers{font-family: Oswald;}
+    //     h1{ font-size: 47px; color: #000000; }
+    //     h2{ font-size: 24px; color: #000000; }
+    //     h3{ font-size: 18px; color: #000000; }
+    //     h4{ font-size: 16px; color: #000000; }
+    //     h5{ font-size: 14px; color: #000000; }
+    //     h6{ font-size: 12px; color: #000000; }
+
+
+    //     /* Header ------------------------------------------------------------------------ */  
+    //     #header, .header-clone, .theme-boxed #header { background-color: #b5b5b5; }
+    //     #header.header-small { background-color: rgba(181,181,181,.98);}
+    //     /* Page Title ------------------------------------------------------------------------ */  
+    //     #page-title { background-color: #1c1c1c; }
+
+    //     /* Body BG color ------------------------------------------------------------------------ */  
+    //     #main { background: #fff; }
+
+    //     .tw-logo { height: 120px;}
+    //     .tw-logo img { line-height: 120px; max-height: 90px;}
+
+    //     /* Menu CSS ------------------------------------------------------------------------ */
+    //     .sf-menu .waves-mega-menu .mega-menu-title { font-family: Open Sans, Arial, Helvetica, sans-serif;}
+    //     ul.sf-menu > li a{ font-family: Open Sans, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 600; color: #ffffff; }
+    //     ul.sf-menu > li.current-menu-item,ul.sf-menu > li.current_page_item{ background-color: ; }
+
+    //     ul.sf-menu li ul { background-color: rgba(39,39,39,.95);}
+    //     ul.sf-menu ul { border-color: #ffffff;}
+    //     ul.sf-menu li ul li.current-menu-item a,ul.sf-menu li ul li a{ color: #fff; }
+    //     ul.sf-menu li ul li.current_page_item a{ color: #ffffff; }
+    //     ul.sf-menu > li.current_page_item > a, .sf-menu > li.current_page_ancestor >a, .sf-menu > li.current-menu-ancestor >a, .sf-menu > li.current-menu-item > a{ color: #ffffff;border-color: #ffffff; }
+    //     ul.sf-menu > li:hover > a, ul.sf-menu > li:hover:after{ color: #ffffff; }
+
+    //     .page-template-page-onepage-php .sf-menu > .tw-menu-active > a,
+    //     .sf-menu .menu-item-has-children a:hover,
+    //     .sf-menu > li.current_page_item.menu-item-has-children,
+    //     .sf-menu > li.current_page_ancestor.menu-item-has-children,
+    //     .sf-menu > li.current-menu-ancestor.menu-item-has-children,
+    //     .sf-menu > li.current-menu-item.menu-item-has-children,
+    //     .sf-menu .waves-mega-menu .mega-menu-title{ color: #ffffff; }
+
+    //     ul.sf-menu > li> a { padding-top: 53.5px}
+    //     ul.sf-menu > li> a { padding-bottom: 53.5px}
+
+    //     .sf-menu ul [class^="fa-"]:hover:before, .sf-menu ul [class*=" fa-"]:hover:before,
+    //     .sf-menu ul .current_page_item[class^="fa-"]:before, .sf-menu ul .current_page_item[class*=" fa-"]:before
+    //     { color: #ffffff; }
+
+    //     /* Pagebuilder Title ----------------------------------------------------- */
+    //     .waves-title h3{font-family: Oswald, Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 400; color: #000000; }
+    //     /* Sidebar Widget Title ----------------------------------------------------- */ 
+    //     h3.widget-title{font-family: Oswald, Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; color: #000000; }
+    //     #sidebar a{color: #676767;}
+    //     #sidebar a:hover{color: #d2151e;}
+    //     /* Footer Widget Title ----------------------------------------------------- */ 
+    //     #bottom h3.widget-title{font-family: Oswald, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 400; color: #fff; }
+
+
+    //     /* Footer ------------------------------------------------------------------------ */  
+    //     #bottom, #bottom h3.widget-title { background-color: #d2151e; }
+    //     #bottom p{ color: ; }
+    //     #bottom a:hover,#footer a:hover{ color: #d2151e; }
+
+    //     /* General Color ------------------------------------------------------------------------ */ 
+
+    //     ::selection{ background: #d2151e; }
+    //     ::-moz-selection{ background: #d2151e; }
+
+    //     /* Primary Color Changes */
+    //     button,
+    //     input[type="submit"],
+    //     input[type="reset"],
+    //     input[type="button"],
+
+    //     .portfolio-filter li a.selected, .portfolio-filter li a.selected:hover,
+    //     article .background, .tw-author, .testimonial-thumb, .pricing-footer a,
+    //     .nav-tabs>li.active,
+    //     .active .accordion-heading .accordion-toggle, #sidebar .tagcloud a:hover,#footer .tagcloud a:hover,      
+    //     .waves-pagination ul.page-numbers li span.current, 
+    //     .twitter-follow a:hover, .tw-infinite-scroll a,
+    //     .tw-coming-soon .days,
+    //     .tw-coming-soon .hours,
+    //     .tw-coming-soon .minutes,
+    //     .tw-coming-soon .seconds
+    //     {background-color: #d2151e; }
+
+    //     .portfolio-filter li:hover a, .pricing-top h5, h3.error404 span, .tw-service-content a:before, 
+    //     ul.jtwt li:before, .tw-infinite-scroll a:hover, .nav-tabs>li:hover span,.nav-tabs>li:hover i,
+    //     .accordion-heading .accordion-toggle:hover, .tw-service-box.style-4 .tw-service-content > a:hover,
+    //     .entry-title a:hover,div.entry-meta > span a:hover,h3.carousel-title a:hover, 
+    //     .carousel-arrow a.carousel-prev:hover, .carousel-arrow a.carousel-next:hover, 
+    //     .testimonial-author a:hover, .nextprev-postlink .post-link-title a:hover, .carousel-meta a:hover, 
+    //     .waves-carousel-portfolio .portfolio-meta a:hover, .waves-portfolio .portfolio-meta a:hover,
+    //     .tw-coming-soon>.sep,#sidebar aside.widget ul li.current-menu-item a,#sidebar aside.widget ul li.current-menu-item:before, 
+    //     .waves-pagination ul.page-numbers li a:hover, .waves-portfolio h2.portfolio-title a:hover,a:hover
+    //     {color: #d2151e; }
+        
+    //     a,.comment-reply-link,.comment-respond a
+    //     {color: #d2151e; }
+
+    //     .portfolio-filter li a.selected, .portfolio-filter li a.selected:hover,
+    //     .nav-tabs>li.active,
+    //     #sidebar .tagcloud a:hover,#footer .tagcloud a:hover, .tw-dropcap.dropcap_border, .twitter-follow a:hover
+    //     {border-color: #d2151e; }
+
+    //     .pricing-footer a:after { border-top-color: #d2151e;}
+
+    //     .image-overlay{background-color: rgba(210,21,30,.9) ; }
+    //     .flickr-channel a:before, .dribbble-widget a:before, .tw-recent-portfolios-widget a:before{background-color: rgba(210,21,30,.9) ; }
+
+
+    //     #footer{ background-color: #d2151e; }
+
+        
+            
