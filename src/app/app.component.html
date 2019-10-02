@@ -24,18 +24,18 @@
   <mat-divider></mat-divider>
   
   <h3 class='heading-title'>Font Families</h3>
-  <div>
-    <h3>Primary font: Oswald</h3>
-    <p>Secondary font: Open Sans</p>
+  <div class='font-family-container'>
+    <h3>Headers / Titles: Oswald</h3>
+    <p>Paragraphs / Content / Links: Open Sans</p>
   </div>
 
   <mat-divider></mat-divider>
   
   <h3 class='heading-title'>Font Sizes</h3>
   <div>
-    <h1 class='intro-title'>Home hero h1: 70px</h1>
-    <h3 class='heading-title'>Heading title h3: 24px</h3>
-    <h3 color="primary" class='callout-title'>Call out h3: 16px in primary color</h3>
+    <h1 class='intro-title'>Home hero h1: 70px; line-height: 78px</h1>
+    <h3 class='heading-title'>Heading title h3: 24px; letter-spacing: 1px</h3>
+    <h3 color="primary" class='callout-title'>Call out h3: 16px in primary color; line-height: 28px; letter-spacing: 0.5px;</h3>
   
     <h1>This is an h1: 47px</h1>
     <h2>This is an h2: 24px</h2>
@@ -67,10 +67,15 @@
 
   <app-form-fields-inputs></app-form-fields-inputs>
 
-
-  
-
-  
+  <h3 class='heading-title'>Slider</h3>
+  <mat-slider
+    thumbLabel
+    [displayWith]="formatLabel"
+    tickInterval="1000"
+    min="1"
+    max="100"
+    color="primary">
+  </mat-slider>
   
 </div>
 

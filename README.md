@@ -1,11 +1,11 @@
 # BDAS Styleguide
 Styleguide for BDAS user interfaces and application. Utilizing Angular 7.0 and Angular Material Design components with custom branding theme and colors. Style adopted from [https://www.edprnorthamerica.com/](https://www.edprnorthamerica.com/) website.
 
-## Live styleguide: 
-[http://hanging-sun.surge.sh/](http://hanging-sun.surge.sh/)
+### Live styleguide: 
+http://hanging-sun.surge.sh/](http://hanging-sun.surge.sh/)
 
-View live style guide: [http://hanging-sun.surge.sh/](http://hanging-sun.surge.sh/)
-Code: https://github.com/toalina/bdas-styleguide
+### Github:
+https://github.com/toalina/bdas-styleguide
 
 ## Angular Material Design Custom Theme and Colors
 Custom styles in `src/theme.scss` and in separate component `.scss`

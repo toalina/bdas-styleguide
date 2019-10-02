@@ -64,6 +64,11 @@ body {
 .colors-container {
     display: flex;
     flex-direction: row;
+    margin-bottom: 3em;
+
+    p {
+        font-style: normal;
+    }
 }
 .primary-color-container {
     color: mat-color($bdas-styleguide-primary);
@@ -86,6 +91,11 @@ h4{ font-size: 16px; color: #000000; }
 h5{ font-size: 14px; color: #000000; }
 h6{ font-size: 12px; color: #000000; }
 
+.font-family-container {
+    p {
+        font-style: normal;
+    }
+}
 .intro-title { font-size: 70px !important; line-height: 78px;}
 .heading-title { font-size: 24px; letter-spacing: 1px; font-weight: 400;}
 .callout-title {
@@ -116,6 +126,10 @@ p {
     margin-bottom: 3em;
 }
 
+// SLIDER
+mat-slider {
+    width: 300px;
+}
 
 // Adopted styles from edprnorthamerica.com //
 /* Header ------------------------------------------------------------------------ */  

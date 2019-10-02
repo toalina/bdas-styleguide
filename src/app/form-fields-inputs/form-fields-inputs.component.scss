@@ -1,8 +1,12 @@
 // FORM / INPUT STYLES
-.mat-form-field {
+.mat-form-field, .mat-radio-group, .radio-group-container {
     font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif !important;
     font-size: inherit;
     line-height: inherit;
+}
+
+.radio-group-container {
+    font-size: 14px;
 }
 
 .form {
@@ -19,6 +23,7 @@
 .form-container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 3em;
 }
 
 .form-container > * {
