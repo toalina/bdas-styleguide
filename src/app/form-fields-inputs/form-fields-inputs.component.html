@@ -1,0 +1,49 @@
+<h3 class='heading-title'>Form Fields and Inputs</h3>
+
+  <form class="form-container">
+
+    <mat-form-field appearance="outline">
+      <mat-label>Basic Input</mat-label>
+      <input matInput placeholder="Placeholder text" value="">
+    </mat-form-field>
+  
+    <mat-form-field appearance="outline">
+      <mat-label>Textarea Input</mat-label>
+      <textarea matInput placeholder="Leave a comment"></textarea>
+    </mat-form-field>
+  
+    <mat-form-field appearance="outline">
+      <mat-label>Select Options</mat-label>
+      <mat-select value="16px" placeholder="Select">
+        <mat-option value="Choice A">Choice A</mat-option>
+        <mat-option value="Choice B">Choice B</mat-option>
+        <mat-option value="Choice C">Choice C</mat-option>
+        <mat-option value="Choice D">Choice D</mat-option>
+        <mat-option value="Choice E">Choice E</mat-option>
+        <mat-option value="Choice F">Choice F</mat-option>
+      </mat-select>
+    </mat-form-field>
+    
+    <mat-form-field appearance="outline">
+      <mat-label>Form field with error message</mat-label>
+      <input matInput placeholder="Enter your email" [formControl]="email" required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+
+    <mat-checkbox [formControl]="disableSelect">Disable select</mat-checkbox>
+
+    <div>
+      <h3>Radios with ngModel</h3>
+      <label id="radio-group-label">Pick your favorite season</label>
+      <mat-radio-group
+        aria-labelledby="radio-group-label"
+        class="radio-group"
+        [(ngModel)]="favoriteSeason">
+        <mat-radio-button class="radio-button" *ngFor="let season of seasons" [value]="season">
+          {{season}}
+        </mat-radio-button>
+      </mat-radio-group>
+      <div>Your favorite season is: {{favoriteSeason}}</div>
+    </div>
+    
+  </form>

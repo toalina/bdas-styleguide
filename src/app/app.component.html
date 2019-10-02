@@ -1,13 +1,26 @@
 <h1>{{ title }}</h1>
+<p style="font-style: normal !important;">Styleguide for BDAS user interfaces and application. Utilizing Angular 7.0 and Angular Material Design components with custom branding theme and colors.</p>
+<p>Code: <a href="https://github.com/toalina/bdas-styleguide" target="_blank">https://github.com/toalina/bdas-styleguide</a></p>
 <div>
-  <div class='logo-container'>
-    <h3 class='heading-title'>EDPR Logo</h3>
-    <img class="logo-img" src="assets/edpr-logo.png" style="width: 180.882px; display: inline-block; height: 75px; background: black;" alt="EDP Renewables">
-    <img class="logo-img" src="assets/EDP+logo.png" style="width: 86px; display: inline-block;" alt="EDP Renewables">
-    <img class="logo-img" src="assets/edpr-renovaveis-blk.png" style="width: 160px; display: inline-block;" alt="EDPR Renováveis">
+  <app-logos></app-logos>
+  
+  <mat-divider></mat-divider>
+
+  <h3 class='heading-title'>Colors</h3>
+  <div class='colors-container'>
+    <div class='primary-color-container'>
+      <h3>Primary color</h3>
+      <p>Hex: #d2151e</p>
+      <p>RGB values: 210, 21, 30</p>
+    </div>
+    <div class='secondary-color-container'>
+      <h3>Secondary color</h3>
+      <p>Hex: #980b12</p>
+      <p>RGB values: 152, 11, 18</p>
+    </div>
   </div>
   
-  
+
   <mat-divider></mat-divider>
   
   <h3 class='heading-title'>Font Families</h3>
@@ -41,94 +54,11 @@
   
   <mat-divider></mat-divider>
   
-  <h3 class='heading-title'>Basic Buttons</h3>
-  <div class="button-row">
-    <button mat-button>Basic</button>
-    <button mat-button color="primary">Primary</button>
-    <button mat-button color="accent">Accent</button>
-    <button mat-button color="warn">Warn</button>
-    <button mat-button disabled>Disabled</button>
-    <a mat-button routerLink=".">Link</a>
-  </div>
-  
-  <h3 class='heading-title'>Stroked Buttons</h3>
-  <div class="button-row">
-    <button mat-stroked-button>Basic</button>
-    <button mat-stroked-button color="primary">Primary</button>
-    <button mat-stroked-button color="accent">Accent</button>
-    <button mat-stroked-button color="warn">Warn</button>
-    <button mat-stroked-button disabled>Disabled</button>
-    <a mat-stroked-button routerLink=".">Link</a>
-  </div>
-  
-  <h3 class='heading-title'>Flat Buttons</h3>
-  <div class="button-row flat-button-row">
-    <button mat-flat-button>Basic</button>
-    <button mat-flat-button color="primary">Primary</button>
-    <button mat-flat-button color="accent">Accent</button>
-    <button mat-flat-button color="warn">Warn</button>
-    <button mat-flat-button disabled>Disabled</button>
-    <a mat-flat-button routerLink=".">Link</a>
-  </div>
+  <app-buttons></app-buttons>
   
   <mat-divider></mat-divider>
 
-  <!-- Input with error message
-  Input grouped with 2 inputs
-  Option drop down
-  Text area
-  Check box
-  Submit -->
-  
-  <h3 class='heading-title'>Form Fields and Inputs</h3>
-
-  <form class="form-container">
-
-    <mat-form-field appearance="outline">
-      <mat-label>Basic Input</mat-label>
-      <input matInput placeholder="Placeholder text" value="">
-    </mat-form-field>
-  
-    <mat-form-field appearance="outline">
-      <mat-label>Textarea Input</mat-label>
-      <textarea matInput placeholder="Leave a comment"></textarea>
-    </mat-form-field>
-  
-    <mat-form-field appearance="outline">
-      <mat-label>Select Options</mat-label>
-      <mat-select value="16px" placeholder="Select">
-        <mat-option value="Choice A">Choice A</mat-option>
-        <mat-option value="Choice B">Choice B</mat-option>
-        <mat-option value="Choice C">Choice C</mat-option>
-        <mat-option value="Choice D">Choice D</mat-option>
-        <mat-option value="Choice E">Choice E</mat-option>
-        <mat-option value="Choice F">Choice F</mat-option>
-      </mat-select>
-    </mat-form-field>
-    
-    <mat-form-field appearance="outline">
-      <mat-label>Form field with error message</mat-label>
-      <input matInput placeholder="Enter your email" [formControl]="email" required>
-      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-    </mat-form-field>
-
-    <mat-checkbox [formControl]="disableSelect">Disable select</mat-checkbox>
-
-    <div>
-      <h3>Radios with ngModel</h3>
-      <label id="radio-group-label">Pick your favorite season</label>
-      <mat-radio-group
-        aria-labelledby="radio-group-label"
-        class="radio-group"
-        [(ngModel)]="favoriteSeason">
-        <mat-radio-button class="radio-button" *ngFor="let season of seasons" [value]="season">
-          {{season}}
-        </mat-radio-button>
-      </mat-radio-group>
-      <div>Your favorite season is: {{favoriteSeason}}</div>
-    </div>
-    
-  </form>
+  <app-form-fields-inputs></app-form-fields-inputs>
 
 
   

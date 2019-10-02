@@ -1,0 +1,38 @@
+// FORM / INPUT STYLES
+.mat-form-field {
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif !important;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    margin: 8px 0;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container > * {
+    // width: 100%;
+    max-width: 500px;
+}
+
+// RADIOS
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.radio-button {
+    margin: 5px;
+}

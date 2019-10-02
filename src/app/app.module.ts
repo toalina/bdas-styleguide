@@ -12,13 +12,16 @@ import { MatSelectModule, MatCheckbox, MatCheckboxModule } from '@angular/materi
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatRadioModule} from '@angular/material/radio';
-
-
-
+import { ButtonsComponent } from './buttons/buttons.component';
+import { FormFieldsInputsComponent } from './form-fields-inputs/form-fields-inputs.component';
+import { LogosComponent } from './logos/logos.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ButtonsComponent,
+    FormFieldsInputsComponent,
+    LogosComponent
   ],
   imports: [
     BrowserModule,

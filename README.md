@@ -1,27 +1,56 @@
-# BdasStyleguide
+# BDAS Styleguide
+Styleguide for BDAS user interfaces and application. Utilizing Angular 7.0 and Angular Material Design components with custom branding theme and colors.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+## Live styleguide: 
+[http://hanging-sun.surge.sh/](http://hanging-sun.surge.sh/)
+
+View live style guide: [http://hanging-sun.surge.sh/](http://hanging-sun.surge.sh/)
+Code: https://github.com/toalina/bdas-styleguide
+
+## Angular Material Design Custom Theme and Colors
+Custom styles in `src/theme.scss` and in separate component `.scss`
+
+### Custom colors
+
+`$bdas-styleguide-theme`
+`$bdas-styleguide-primary`: `#d2151e`
+`$bdas-styleguide-accent`: `#980b12`
+`$bdas-styleguide-warn`: `$mat-red`
+
+
+## Font-Families: 
+Headers / Titles: Oswald
+Paragraphs / Content: Open Sans
+
+## Font-Sizes: 
+h1: 47px
+h2: 24px
+h3: 18px
+h4: 16px
+h5: 14px
+h6: 12px
+
+h1 hero/intro home: 70px
+h3 heading title: 24px
+h3 callout in primary: 16px
+
+## Primary color: #d2151e
+RGB values: 210, 21, 30
+
+## Secondary color: #980b12
+RGB values: 152, 11, 18
+
+## CTA format:
+
+## Link format:
+
+## Form Fields and Inputs:
+
+
+## About
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9 and [Angular Material Design Components](https://material.angular.io/).
 
 ## Development server
-
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+From project root, run `ng build`. Navigate to /dist/bdas-styleguide. Run `surge`. Point to `hanging-sun.surge.sh` to redeploy.
